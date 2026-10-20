@@ -210,3 +210,30 @@ footer.site .flinks{display:flex;gap:22px}
   .gal img{height:300px}
   .concept{top:auto;bottom:16px}
 }
+
+/* --- Enrichment: highlights / story / experience / gallery preview / FAQ --- */
+.highlights{padding:54px 0 6px}
+.hl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.hl-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px;text-align:center;box-shadow:0 12px 30px rgba(34,28,20,.06)}
+.hl-card .tile{width:56px;height:56px;border-radius:18px;background:var(--cream);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.hl-card .tile i{font-size:25px;color:var(--gold-deep)}
+.hl-card h3{font-size:19px;margin-bottom:8px}
+.hl-card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.hl-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.hl-grid{grid-template-columns:1fr}}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.stepc{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:36px 30px}
+.stepc .snum{font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:14px}
+.stepc h3{font-size:22px;margin-bottom:10px}
+.stepc p{color:var(--muted);font-size:15px}
+@media(max-width:860px){.steps3{grid-template-columns:1fr}}
+.gprev{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.gprev figure{border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow);margin:0}
+.gprev img{width:100%;height:auto;aspect-ratio:4/4.2;object-fit:cover}
+.gprev figcaption{position:absolute;left:0;right:0;bottom:0;padding:36px 18px 16px;color:#fff;font-size:14px;font-weight:500;background:linear-gradient(to top,rgba(22,16,9,.72),transparent)}
+@media(max-width:860px){.gprev{grid-template-columns:1fr 1fr}}
+.faq-list{max-width:760px;margin:0 auto;text-align:left}
+.faq-item{border-bottom:1px solid var(--line);padding:26px 0}
+.faq-item h3{font-size:21px;margin-bottom:8px}
+.faq-item p{color:var(--muted);font-size:16px}
+
